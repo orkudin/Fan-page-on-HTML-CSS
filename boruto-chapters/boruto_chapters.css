@@ -1,0 +1,281 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 500px){
+	.navbar a{
+		float: none;
+		width: 100%;
+	}
+	.row{
+		flex-direction: column;
+	}
+	iframe{
+		width: auto;
+	}
+	.center_button{
+		flex-direction: column;
+	}
+}
+	
+body{
+	font-family: sans-serif;
+}
+.navbar{
+	background-color: #db5990;
+	overflow: hidden;
+}
+.navbar a{
+	float: left;
+	color: white;
+}
+.logo{
+	width: 120px;
+}
+a{
+	color: black;
+	text-decoration: none;
+	text-align: center;
+
+}
+.navbut{
+	display: block;
+	padding: 23px 20px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.navbut:hover{
+	background-color: #F5D5AB;
+}
+
+/*-----------------------------------*/
+
+.row{
+	display: flex;
+	background-image: url(../img/pink.jpg);
+}
+
+.aside_l{
+	flex: 20%;
+}
+
+.aside_r{
+	flex: 20%;	
+}
+
+.main{
+	flex: 60%;	
+	border-left: 5px double pink;	
+	border-right: 5px double pink;				
+}
+
+.video_container{
+	display: flex;
+  justify-content: center;
+  margin-bottom: 10px; 	
+}
+.container_border{
+	border: 7px solid black;
+	border-radius: 20px;
+	height: 494px;
+}
+
+
+
+/*---------------------------*/
+.center_button{
+	display: flex;
+	justify-content: center;
+}
+
+.navbut_clickable{
+	display: inline-flex;	
+	padding: 15px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.button{
+	display: inline-block;
+	text-align: center;
+	background-color: pink;	
+	border-radius: 15px;	
+	border: 2px solid black;
+	font-weight: bold;
+}
+
+.button:hover{
+	background-color: red;
+}
+
+.select_cont{
+	display: flex;
+	justify-content: center;
+	padding: 11px;
+	margin-left: 70px;
+	margin-right: 70px;
+	background-color: red;
+	border-radius: 15px;
+	background-color: rgba(100, 100, 100, 0.3);
+}
+
+/*---------------------------*/
+
+.numb_series{
+	display: flex;
+	padding: 20px 0px 5px 0px;
+	justify-content: center;	
+	}
+
+.series_name{
+	padding: 14px;
+	text-align: center;
+	
+}
+
+.border_name{
+
+}
+
+
+.numb_series_border_1{
+	border: 5px dashed purple;
+	padding: 3px 15px 3px 15px;
+}
+
+
+/*----------------------------*/
+
+.newsblock{
+	display: inline-flex;
+	background-color: rgba(100, 100, 100, 0.3);
+	width: 350px;
+	margin: 5px 0px 15px 10px;	
+	border: 2px solid black;
+	border-radius: 15px;
+}
+
+.imgblock{
+	width: 130px;
+	margin: 10px 0px 10px 10px;
+}
+
+.imgblock img{
+	width: 100%;	
+}
+
+.textblock{
+	width: 190px;
+}
+
+.textblock p{
+	margin: 10px 10px 5px 10px;
+	font-size: 85%;
+}
+
+h2{
+	margin-top: 10px;
+}
+h4 {
+	margin: 5px 0px 0px 10px;	
+}
+
+li {
+   list-style-type: none; 
+   float: right; 
+   font-size: 90%;
+   margin-bottom: 5px;
+}
+
+
+.lemma{
+	margin-top: 45px;
+	display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.container_lemma{
+	border: 5px double black;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.contact{
+	display: block;
+	height: 150px;
+	width: 350px;
+	border: 8px solid black;
+	border-radius: 12px;	
+	text-align: center;
+	margin-left: 10px;
+}
+.contact h3{
+	background-color: rgba(100, 100, 100, 0.8) ;
+	color: white;
+	margin: 7px 30px 16px 30px;
+	border: 5px solid black;
+	border-radius: 4px;
+	
+}
+
+.top_image{
+	margin-top: 335px;
+}
+
+.bottom_image{
+	display: inline-flex;
+	margin-top: 2px;
+	margin-left: 2px;
+	border: 3px solid black;
+	border-radius: 10px;
+}
+
+/*-----------------------------------*/
+
+footer{
+	background-color: black;
+	padding: 15px;
+	color: white;
+	text-align: center;
+}
+
+/*--------------------------*/
+
+.frog{
+	width: 48px;
+	height: 66px;
+	background: url(../img/runn-removebg-preview.png) center center;
+  position: relative; 	
+  top: 2px;
+	animation: frog-rotate 25s steps(1) infinite, frog-run 25s linear infinite, frog 1s steps(3) infinite;
+}
+
+@keyframes frog-run{
+  0% {
+   left: 125px;
+  }
+  50% {
+    left: 935px;
+  }
+  100%{
+  	left: 125px;
+  }
+}
+
+@keyframes frog{
+  100%{background-position: 200% 0;}
+}
+
+@keyframes frog-rotate {
+  100% {
+    transform: scale(-1, 1)
+  }
+  50% {
+    transform: scale(1, 1)
+  }
+  0% {
+    transform: scale(-1, 1)
+  }
+}

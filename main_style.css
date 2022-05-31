@@ -1,0 +1,220 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif;
+}
+.navbar{
+	background-color: #db5990;
+	overflow: hidden;
+}
+.navbar a{
+	float: left;
+	color: white;
+}
+.logo{
+	width: 120px;
+}
+.navbut{
+	display: block;
+	padding: 23px 20px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.navbut:hover{
+	background-color: #F5D5AB;
+}
+
+header{
+	background-image: url("img/21st_Konoha1.png");
+	height: 1000px;
+	background-size: cover;
+	color: white;
+	padding-top: 140px;
+	padding-left: 100px;
+	font-size: 20px;
+}
+
+.rating{
+	float: right;
+	background-color: #FAA6C3;
+	padding: 15px 15px 15px 50px;
+	border-top: 3px ridge rgba(100, 100, 100, 0.7); 
+	border-bottom: 3px ridge rgba(100, 100, 100, 0.7);
+	border-left: 3px ridge rgba(100, 100, 100, 0.7);
+	border-bottom-left-radius: 30px;
+	border-top-left-radius: 30px;
+	font-size: 50px;
+	margin-top: 20px;
+	font-weight: bold;
+	color: white;
+}
+.rating:hover{
+	color: red;
+}
+.name:hover{
+	color: #C22058;
+
+}
+.name{
+	margin-bottom: 10px;
+}
+.lemma{
+	margin-top: 10px;
+	padding: 15px;
+	display: block;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 580px;
+	border-radius: 15px;
+}
+p {
+	text-indent: 20px;
+}
+.movie{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	width: 200px;
+	background-color: hotpink;
+	padding: 15px;
+	margin-top: 25px;
+	border-radius: 15px;
+}
+
+.movie:hover{
+	background-color: pink;
+}
+
+.row{
+	display: flex;
+	background-image: url(img/pink.jpg);
+}
+
+.aside{
+	flex: 20%;
+	height: 80%;
+	background-color: #c0c0c0;
+	padding: 20px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.main{
+	flex: 80%;
+	padding: 20px;
+	
+}
+
+footer{
+	background-color: black;
+	padding: 15px;
+	color: white;
+	text-align: center;
+}
+
+.imgblock{
+	display: inline-block;
+	width: 240px;
+	padding: 10px;
+}
+
+.imgblock img{
+	width: 100%;	
+}
+
+.blockimg{
+	width: 70%;
+}
+.blockimg img{
+	width: 100%;
+}
+.numb_series{
+	padding: 15px;
+}
+
+@media screen and (max-width: 500px){
+	.navbar a{
+		float: none;
+		width: 100%;
+	}
+	header{
+		flex-direction: column;
+	}
+	.lemma{
+		flex-direction: column;
+		width: auto;
+	}
+	a .movie{
+		height: auto;
+	}
+}
+
+/****************/
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+.newsblock{
+	background-color: rgba(100, 100, 100, 0.3);
+	height: fit-content;
+	width: 450px;
+	margin-bottom: 15px;	
+	margin-top: 5px;
+	border-radius: 10px;
+	border: 2px solid black;
+}
+
+.textblock{
+	height: fit-content;
+	width: 205px;
+	float: right;
+}
+
+.textblock p{
+	padding: 10px;
+	font-size: 85%;
+
+}
+
+/*-------------------------------------*/
+
+@keyframes shuriken{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.shuriken {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(img/shuri.png);
+	background-size: contain;
+	animation: shuriken 3s infinite alternate ease-in-out;
+}
+.center-shuriken{
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;	
+}
+
+/*---------------------------------*/
+.joke{
+	margin-top: 340px;
+	width:150px; 
+	height:150px;
+	transform: scaleX(-1);
+}
+
+.aniblock{
+	float: right;
+	display: block;
+}
+
